@@ -7,10 +7,12 @@ import ItemListContainer from './container/ItemListContainer'
 function App() {
   return (
     <>
-    <header>
-      <NavBar />
-      <ItemListContainer />
-    </header>
+      <header>
+        <NavBar />  
+      </header>
+      <main>
+        <ItemListContainer message='Catálogo' />
+      </main>
     </>
   );
 }

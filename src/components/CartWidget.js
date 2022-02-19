@@ -8,8 +8,8 @@ function CartWidget() {
             <img
                 src={Carrito}
                 alt='Cart Logo'
-                width={100}
-                height={100}
+                width={120}
+                height={120}
             />
         </div>
 

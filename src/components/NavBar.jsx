@@ -8,13 +8,13 @@ function NavBar() {
   return (
     <>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Container fluid>
+        <Container>
         <Navbar.Brand href="#home">
           <img
             src={Logo}
             alt='TechStore Logo'
-            width={100}
-            height={100}
+            width={120}
+            height={120}
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -28,10 +28,7 @@ function NavBar() {
             <Nav.Link href="#combos">Combos</Nav.Link>
             <Nav.Link href="#outlet">Outlet</Nav.Link>
           </Nav>
-          <Nav>
-            <Nav.Link href="#login">Mi cuenta</Nav.Link>
-            <CartWidget />
-          </Nav>
+          <CartWidget />
         </Navbar.Collapse>
         </Container>
       </Navbar>
