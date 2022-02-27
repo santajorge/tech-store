@@ -1,12 +1,13 @@
-import React from 'react'
+import ItemList from '../components/ItemList'
 
-const ItemListContainer = (props) => {
+function ItemListContainer() {
     return (
         <div>
-            <h1 className='text-center mt-4'>{props.message}</h1>
+            <ItemList />
         </div>
     )
-
+    
 }
+
 
 export default ItemListContainer

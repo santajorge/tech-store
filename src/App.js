@@ -11,7 +11,7 @@ function App() {
         <NavBar />  
       </header>
       <main>
-        <ItemListContainer message='Catálogo' />
+        <ItemListContainer/>
       </main>
     </>
   );
