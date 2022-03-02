@@ -14,7 +14,8 @@ const ItemList = () => {
 
         try{
             const response = await fetch(url);
-            setProducts (response.json());
+            let resJson = await (response.json());
+            setProducts (resJson);
         }   catch(error){
             console.log(error);
         }
@@ -28,14 +29,14 @@ const ItemList = () => {
     }, [])
 
     return (
-        <Container>
+        <Container>    
             {
-                products.length ?
+                products.length ? 
 
                 (
                     products.map(product => {
                         return(
-                            <ProductCard key={product.id} product={product}/>
+                                <ProductCard key={product.id} product={product}/>
                         )
 
                     })
