@@ -1,19 +1,19 @@
 import React from 'react';
 import {Card, Button} from 'react-bootstrap';
 
-function Product ({product: {name, price, image, detail}}) {
+function ProductCard ({product}) {
     return(
         <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={image} />
+            <Card.Img variant="top" src={product.image} />
             <Card.Body>
-                <Card.Title>{name} ${price}</Card.Title>
-                <Card.Text>{detail}</Card.Text>
+                <Card.Title>{product.name} ${product.price}</Card.Title>
+                <Card.Text>{product.detail}</Card.Text>
                 <Button variant="primary">Añadir al carrito</Button>
             </Card.Body>
         </Card>      
     );
 }
 
-export default Product;
+export default ProductCard;
     
 
