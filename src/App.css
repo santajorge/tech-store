@@ -1,1 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
+main{
+    font-family: 'Oxygen', sans-serif;
+    height: 100vh;
+    background: #ffffff;
+}

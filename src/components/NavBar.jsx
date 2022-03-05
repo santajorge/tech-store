@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Navbar, Container, Nav, NavDropdown} from 'react-bootstrap';
 import Logo from './assets/img/Logo.png';
 import CartWidget from './CartWidget';
@@ -9,14 +10,16 @@ function NavBar() {
     <>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-        <Navbar.Brand href="#home">
-          <img
-            src={Logo}
-            alt='TechStore Logo'
-            width={120}
-            height={120}
-          />
-        </Navbar.Brand>
+        <Link to="/">
+          <Navbar.Brand>
+            <img
+              src={Logo}
+              alt='TechStore Logo'
+              width={120}
+              height={120}
+            />
+          </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

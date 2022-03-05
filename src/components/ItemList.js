@@ -1,35 +1,23 @@
 import React from 'react';
 import ProductCard from './Item';
 import { useEffect } from 'react';
-import {Container} from 'react-bootstrap';
+import { getProducts } from '../helpers/getProducts';
+import {CardGroup, Container} from 'react-bootstrap';
 
 
 const ItemList = () => {
 
-    const url = 'https://run.mocky.io/v3/31619adb-d558-48a6-af27-db4159426e04';
-
-    const [products, setProducts] = React.useState([])
-
-    const getProducts = async () => {
-
-        try{
-            const response = await fetch(url);
-            let resJson = await (response.json());
-            setProducts (resJson);
-        }   catch(error){
-            console.log(error);
-        }
-            
-    }
+    const [products, setProducts] = React.useState([]);
 
     useEffect(() => {
 
-       getProducts();
+       getProducts(setProducts);
 
     }, [])
 
     return (
-        <Container>    
+        <Container fluid>   
+            <CardGroup> 
             {
                 products.length ? 
 
@@ -45,6 +33,7 @@ const ItemList = () => {
                 : <h1>Cargando...</h1>
 
             }
+            </CardGroup>
         </Container>
     )
 
