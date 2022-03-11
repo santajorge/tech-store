@@ -24,12 +24,22 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <NavDropdown title="Productos" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Componentes PC</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Periféricos</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Streaming</NavDropdown.Item>
+              <Link to="/category">
+                <NavDropdown.Item>Componentes PC</NavDropdown.Item>
+              </Link>
+              <Link to="/category">
+                <NavDropdown.Item>Periféricos</NavDropdown.Item>
+              </Link>
+              <Link to="/category">
+              <NavDropdown.Item>Streaming</NavDropdown.Item>
+              </Link>
             </NavDropdown>
-            <Nav.Link href="#combos">Combos</Nav.Link>
-            <Nav.Link href="#outlet">Outlet</Nav.Link>
+            <Link to="/category">
+              <Nav.Link>Combos</Nav.Link>
+            </Link>
+            <Link to="/category">
+              <Nav.Link href="#outlet">Outlet</Nav.Link>
+            </Link>
           </Nav>
           <CartWidget />
         </Navbar.Collapse>

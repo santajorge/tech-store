@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import ProductPage from './pages/ProductsPage';
 import DetailPage from './pages/DetailPage';
@@ -13,8 +13,9 @@ function App() {
       <NavBar />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route index element={<Home />} />
         <Route path="/products" element={<ProductPage />} />
+        <Route path="/category/:categoryId" element={<ProductPage />} />
         <Route path="/product/:id" element={<DetailPage />} />
       </Routes>
 

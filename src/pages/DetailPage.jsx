@@ -5,7 +5,7 @@ import {Container} from 'react-bootstrap';
 
 const DetailPage = () => {
 
-    const {id} = useParams();
+  const {id} = useParams();
 
   return (
     <main>
