@@ -25,10 +25,16 @@ function NavBar() {
           <Nav className="me-auto">
             <NavDropdown title="Productos" id="collasible-nav-dropdown">
               <Link to="/category">
+                <NavDropdown.Item>Equipos y Notebooks</NavDropdown.Item>
+              </Link>
+              <Link to="/category">
                 <NavDropdown.Item>Componentes PC</NavDropdown.Item>
               </Link>
               <Link to="/category">
-                <NavDropdown.Item>Periféricos</NavDropdown.Item>
+                <NavDropdown.Item>Consolas de Video Juegos</NavDropdown.Item>
+              </Link>
+              <Link to="/category">
+                <NavDropdown.Item>Accesorios</NavDropdown.Item>
               </Link>
               <Link to="/category">
               <NavDropdown.Item>Streaming</NavDropdown.Item>
@@ -38,7 +44,7 @@ function NavBar() {
               <Nav.Link>Combos</Nav.Link>
             </Link>
             <Link to="/category">
-              <Nav.Link href="#outlet">Outlet</Nav.Link>
+              <Nav.Link href="#outlet">Destacados</Nav.Link>
             </Link>
           </Nav>
           <CartWidget />

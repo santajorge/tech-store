@@ -1,4 +1,4 @@
-const url = 'https://run.mocky.io/v3/65dbbf39-ae2e-4d30-ac4e-1a0082f18306';
+const url = 'https://run.mocky.io/v3/5c92a6a0-5f76-4e8b-8a4c-a2a457049044';
 
 export const getProducts = async (setState) => {
 

@@ -2,7 +2,7 @@ import React from 'react';
 import ProductCard from './Item';
 import { useEffect } from 'react';
 import { getProducts } from '../helpers/getProducts';
-import {CardGroup, Container} from 'react-bootstrap';
+import {Container, Row} from 'react-bootstrap';
 
 
 const ItemList = () => {
@@ -17,7 +17,7 @@ const ItemList = () => {
 
     return (
         <Container fluid>   
-            <CardGroup> 
+            <Row className="justify-content-center">
             {
                 products.length ? 
 
@@ -33,7 +33,7 @@ const ItemList = () => {
                 : <h1>Cargando...</h1>
 
             }
-            </CardGroup>
+            </Row>
         </Container>
     )
 
